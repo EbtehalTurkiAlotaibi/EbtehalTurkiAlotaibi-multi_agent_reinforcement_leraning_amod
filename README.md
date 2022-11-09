@@ -27,7 +27,7 @@ To test the environment:
 ```
 python3 main.py --env-config=driver --config=vdn
 ```
-where --config could have : iql/dmix/vdn/coma/qtran
+where --config could have : qmix/coma/vdn/iql/qtran
 
 To try your own version of reward shaping:
 
