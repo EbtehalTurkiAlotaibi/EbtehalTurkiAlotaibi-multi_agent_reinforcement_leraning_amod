@@ -1,0 +1,247 @@
+[INFO 06:33:49] pymarl Running command 'my_main'
+[INFO 06:33:49] pymarl Started run with ID "21"
+[DEBUG 06:33:49] pymarl Starting Heartbeat
+[DEBUG 06:33:49] my_main Started
+Will run  <sacred.run.Run object at 0x7f9ded6e8a30> {'runner': 'parallel', 'mac': 'basic_mac', 'env': 'driver', 'env_args': {'seed': 972766281, 'state_last_action': False}, 'batch_size_run': 8, 'test_nepisode': 16, 'test_interval': 100000, 'test_greedy': True, 'log_interval': 2000, 'runner_log_interval': 2000, 'learner_log_interval': 2000, 't_max': 1000000, 'use_cuda': True, 'buffer_cpu_only': True, 'use_tensorboard': False, 'save_model': False, 'save_model_interval': 2000000, 'checkpoint_path': '', 'evaluate': False, 'load_step': 0, 'save_replay': False, 'local_results_path': 'results', 'gamma': 0.99, 'batch_size': 8, 'buffer_size': 8, 'lr': 0.0005, 'critic_lr': 0.0005, 'optim_alpha': 0.99, 'optim_eps': 1e-05, 'grad_norm_clip': 10, 'agent': 'rnn', 'rnn_hidden_dim': 64, 'obs_agent_id': True, 'obs_last_action': True, 'repeat_id': 1, 'label': 'default_label', 'action_selector': 'multinomial', 'epsilon_start': 0.5, 'epsilon_finish': 0.01, 'epsilon_anneal_time': 100000, 'mask_before_softmax': False, 'target_update_interval': 200, 'td_lambda': 0.8, 'agent_output_type': 'pi_logits', 'learner': 'coma_learner', 'critic_q_fn': 'coma', 'critic_baseline_fn': 'coma', 'critic_train_mode': 'seq', 'critic_train_reps': 1, 'q_nstep': 0, 'name': 'coma', 'seed': 972766281} <Logger my_main (DEBUG)>
+[WARNING 06:33:49] my_main CUDA flag use_cuda was switched OFF automatically because no CUDA devices are available!
+[INFO 06:33:49] my_main Experiment Parameters:
+[INFO 06:33:49] my_main 
+
+{   'action_selector': 'multinomial',
+    'agent': 'rnn',
+    'agent_output_type': 'pi_logits',
+    'batch_size': 8,
+    'batch_size_run': 8,
+    'buffer_cpu_only': True,
+    'buffer_size': 8,
+    'checkpoint_path': '',
+    'critic_baseline_fn': 'coma',
+    'critic_lr': 0.0005,
+    'critic_q_fn': 'coma',
+    'critic_train_mode': 'seq',
+    'critic_train_reps': 1,
+    'env': 'driver',
+    'env_args': {   'seed': 972766281,
+                    'state_last_action': False},
+    'epsilon_anneal_time': 100000,
+    'epsilon_finish': 0.01,
+    'epsilon_start': 0.5,
+    'evaluate': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'label': 'default_label',
+    'learner': 'coma_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mask_before_softmax': False,
+    'name': 'coma',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'q_nstep': 0,
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'parallel',
+    'runner_log_interval': 2000,
+    'save_model': False,
+    'save_model_interval': 2000000,
+    'save_replay': False,
+    'seed': 972766281,
+    't_max': 1000000,
+    'target_update_interval': 200,
+    'td_lambda': 0.8,
+    'test_greedy': True,
+    'test_interval': 100000,
+    'test_nepisode': 16,
+    'use_cuda': False,
+    'use_tensorboard': False}
+
+[DEBUG 06:34:08] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:08] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'version'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:09] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:09] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+Process Process-1:
+Traceback (most recent call last):
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/runners/parallel_runner.py", line 215, in env_worker
+    env = env_fn.x()
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/envs/__init__.py", line 9, in env_fn
+    return env(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'state_last_action'
+[DEBUG 06:34:10] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+Process Process-3:
+Traceback (most recent call last):
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/runners/parallel_runner.py", line 215, in env_worker
+    env = env_fn.x()
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/envs/__init__.py", line 9, in env_fn
+    return env(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'state_last_action'
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+Process Process-5:
+Traceback (most recent call last):
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/runners/parallel_runner.py", line 215, in env_worker
+    env = env_fn.x()
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/envs/__init__.py", line 9, in env_fn
+    return env(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'state_last_action'
+[DEBUG 06:34:10] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+Process Process-4:
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+Traceback (most recent call last):
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/runners/parallel_runner.py", line 215, in env_worker
+    env = env_fn.x()
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/envs/__init__.py", line 9, in env_fn
+    return env(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'state_last_action'
+[DEBUG 06:34:10] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+[DEBUG 06:34:10] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=None)
+Process Process-2:
+Traceback (most recent call last):
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/runners/parallel_runner.py", line 215, in env_worker
+    env = env_fn.x()
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/envs/__init__.py", line 9, in env_fn
+    return env(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'state_last_action'
+[DEBUG 06:34:10] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl, universal_newlines=False, shell=None, istream=<valid stream>)
+Process Process-6:
+Traceback (most recent call last):
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/runners/parallel_runner.py", line 215, in env_worker
+    env = env_fn.x()
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/envs/__init__.py", line 9, in env_fn
+    return env(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'state_last_action'
+Process Process-7:
+Traceback (most recent call last):
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/runners/parallel_runner.py", line 215, in env_worker
+    env = env_fn.x()
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/envs/__init__.py", line 9, in env_fn
+    return env(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'state_last_action'
+Process Process-8:
+Traceback (most recent call last):
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/ebtehal/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/runners/parallel_runner.py", line 215, in env_worker
+    env = env_fn.x()
+  File "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/envs/__init__.py", line 9, in env_fn
+    return env(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'state_last_action'

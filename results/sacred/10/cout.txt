@@ -1,0 +1,307 @@
+[INFO 21:50:01] pymarl Running command 'my_main'
+[INFO 21:50:01] pymarl Started run with ID "10"
+[DEBUG 21:50:01] pymarl Starting Heartbeat
+[DEBUG 21:50:01] my_main Started
+Will run  <sacred.run.Run object at 0x7fc61131fc70> {'runner': 'episode', 'mac': 'basic_mac', 'env': 'driver', 'env_args': {'seed': 141257694}, 'batch_size_run': 1, 'test_nepisode': 16, 'test_interval': 100000, 'test_greedy': True, 'log_interval': 2000, 'runner_log_interval': 2000, 'learner_log_interval': 2000, 't_max': 100000, 'use_cuda': True, 'buffer_cpu_only': True, 'use_tensorboard': False, 'save_model': False, 'save_model_interval': 2000000, 'checkpoint_path': '', 'evaluate': False, 'load_step': 0, 'save_replay': False, 'local_results_path': 'results', 'gamma': 0.98, 'batch_size': 32, 'buffer_size': 5000, 'lr': 0.0005, 'critic_lr': 0.0005, 'optim_alpha': 0.99, 'optim_eps': 1e-05, 'grad_norm_clip': 10, 'agent': 'rnn', 'rnn_hidden_dim': 64, 'obs_agent_id': True, 'obs_last_action': True, 'repeat_id': 1, 'label': 'default_label', 'action_selector': 'epsilon_greedy', 'epsilon_start': 1.0, 'epsilon_finish': 0.05, 'epsilon_anneal_time': 50000, 'target_update_interval': 200, 'agent_output_type': 'q', 'learner': 'q_learner', 'double_q': True, 'mixer': 'vdn', 'name': 'vdn', 'seed': 141257694} <Logger my_main (DEBUG)>
+[WARNING 21:50:01] my_main CUDA flag use_cuda was switched OFF automatically because no CUDA devices are available!
+[INFO 21:50:01] my_main Experiment Parameters:
+[INFO 21:50:01] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'driver',
+    'env_args': {   'seed': 141257694},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'gamma': 0.98,
+    'grad_norm_clip': 10,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': 'vdn',
+    'name': 'vdn',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': False,
+    'save_model_interval': 2000000,
+    'save_replay': False,
+    'seed': 141257694,
+    't_max': 100000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 100000,
+    'test_nepisode': 16,
+    'use_cuda': False,
+    'use_tensorboard': False}
+
+Simulation Start
+[INFO 21:50:02] my_main Beginning training for 100000 timesteps
+/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/components/episode_buffer.py:103: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /Users/distiller/project/conda/conda-bld/pytorch_1646756029501/work/torch/csrc/utils/tensor_new.cpp:210.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/driver_marl/src/components/episode_buffer.py:103: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 21:50:03] my_main t_env: 119 / 100000
+[INFO 21:50:03] my_main Estimated time left: 0 seconds. Time passed: 0 seconds
+[INFO 21:50:10] my_main Recent Stats | t_env:       2023 | Episode:       17
+ep_length_mean:          119.0000	epsilon:                   1.0000	return_mean:             -6718.8000	return_std:                0.0000
+test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000	
+[INFO 21:50:14] my_main Recent Stats | t_env:       4046 | Episode:       34
+ep_length_mean:          119.0000	epsilon:                   0.9616	grad_norm:               1284.8436	loss:                    6945.0400
+q_taken_mean:              0.0903	return_mean:             -6954.3765	return_std:              272.4656	target_mean:             -30.1872
+td_error_abs:             60.9020	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:50:22] my_main Recent Stats | t_env:       6069 | Episode:       51
+ep_length_mean:          119.0000	epsilon:                   0.9231	grad_norm:               961.7700	loss:                    6368.2151
+q_taken_mean:             -1.5862	return_mean:             -7135.5725	return_std:              368.7304	target_mean:             -29.6955
+td_error_abs:             57.3348	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:50:30] my_main Recent Stats | t_env:       8092 | Episode:       68
+ep_length_mean:          119.0000	epsilon:                   0.8847	grad_norm:               855.6457	loss:                    6180.7723
+q_taken_mean:             -2.5614	return_mean:             -7059.9162	return_std:              449.3465	target_mean:             -29.8571
+td_error_abs:             56.1989	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:50:36] my_main Recent Stats | t_env:      10115 | Episode:       85
+ep_length_mean:          119.0000	epsilon:                   0.8463	grad_norm:               790.8613	loss:                    5943.9805
+q_taken_mean:             -3.2832	return_mean:             -7018.3847	return_std:              467.3547	target_mean:             -29.7032
+td_error_abs:             54.8173	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:50:41] my_main Recent Stats | t_env:      12138 | Episode:      102
+ep_length_mean:          119.0000	epsilon:                   0.8078	grad_norm:               748.8278	loss:                    5777.5377
+q_taken_mean:             -3.8919	return_mean:             -7019.9906	return_std:              592.8153	target_mean:             -29.6176
+td_error_abs:             53.7774	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:50:47] my_main Recent Stats | t_env:      14161 | Episode:      119
+ep_length_mean:          119.0000	epsilon:                   0.7694	grad_norm:               602.9261	loss:                    5361.5211
+q_taken_mean:             -5.3292	return_mean:             -6900.0682	return_std:              602.2371	target_mean:             -29.4280
+td_error_abs:             51.2857	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:50:55] my_main Recent Stats | t_env:      16184 | Episode:      136
+ep_length_mean:          119.0000	epsilon:                   0.7309	grad_norm:               577.9071	loss:                    5091.0140
+q_taken_mean:             -6.2352	return_mean:             -6639.7741	return_std:              593.2443	target_mean:             -29.2507
+td_error_abs:             49.6530	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:51:03] my_main Recent Stats | t_env:      18207 | Episode:      153
+ep_length_mean:          119.0000	epsilon:                   0.6925	grad_norm:               547.3208	loss:                    4794.8280
+q_taken_mean:             -7.0282	return_mean:             -6615.9247	return_std:              565.0903	target_mean:             -28.8118
+td_error_abs:             47.8079	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:51:12] my_main Recent Stats | t_env:      20230 | Episode:      170
+ep_length_mean:          119.0000	epsilon:                   0.6541	grad_norm:               518.6439	loss:                    4554.7017
+q_taken_mean:             -7.7626	return_mean:             -6464.5588	return_std:              565.7665	target_mean:             -28.3654
+td_error_abs:             46.1212	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:51:20] my_main Recent Stats | t_env:      22253 | Episode:      187
+ep_length_mean:          119.0000	epsilon:                   0.6156	grad_norm:               495.9783	loss:                    4360.2229
+q_taken_mean:             -8.4490	return_mean:             -6260.8212	return_std:              516.5286	target_mean:             -28.1530
+td_error_abs:             44.9266	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:51:27] my_main Updated target network
+[INFO 21:51:28] my_main Recent Stats | t_env:      24276 | Episode:      204
+ep_length_mean:          119.0000	epsilon:                   0.5772	grad_norm:               521.2053	loss:                    4512.2130
+q_taken_mean:             -9.1030	return_mean:             -6118.4988	return_std:              515.9899	target_mean:             -29.8135
+td_error_abs:             46.2403	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:51:34] my_main Recent Stats | t_env:      26299 | Episode:      221
+ep_length_mean:          119.0000	epsilon:                   0.5388	grad_norm:               543.5325	loss:                    4645.3883
+q_taken_mean:             -9.7485	return_mean:             -5946.0412	return_std:              475.0304	target_mean:             -31.3940
+td_error_abs:             47.3709	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:51:41] my_main Recent Stats | t_env:      28322 | Episode:      238
+ep_length_mean:          119.0000	epsilon:                   0.5003	grad_norm:               576.1500	loss:                    4899.5035
+q_taken_mean:            -10.3813	return_mean:             -5908.2235	return_std:              583.2364	target_mean:             -33.3530
+td_error_abs:             49.0908	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:51:47] my_main Recent Stats | t_env:      30345 | Episode:      255
+ep_length_mean:          119.0000	epsilon:                   0.4619	grad_norm:               613.4076	loss:                    5188.3075
+q_taken_mean:            -11.0069	return_mean:             -6263.4635	return_std:              627.6367	target_mean:             -35.5701
+td_error_abs:             51.2379	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:51:56] my_main Recent Stats | t_env:      32368 | Episode:      272
+ep_length_mean:          119.0000	epsilon:                   0.4234	grad_norm:               645.2057	loss:                    5427.4841
+q_taken_mean:            -11.6225	return_mean:             -6146.1835	return_std:              676.6599	target_mean:             -37.5582
+td_error_abs:             52.9020	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:52:02] my_main Recent Stats | t_env:      34391 | Episode:      289
+ep_length_mean:          119.0000	epsilon:                   0.3850	grad_norm:               638.9938	loss:                    5392.2557
+q_taken_mean:            -12.2315	return_mean:             -6616.6000	return_std:              1039.2990	target_mean:             -37.5431
+td_error_abs:             51.9689	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:52:11] my_main Recent Stats | t_env:      36414 | Episode:      306
+ep_length_mean:          119.0000	epsilon:                   0.3466	grad_norm:               628.6095	loss:                    5348.6268
+q_taken_mean:            -12.8234	return_mean:             -7032.5965	return_std:              1426.0419	target_mean:             -37.6736
+td_error_abs:             51.3521	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:52:17] my_main Recent Stats | t_env:      38437 | Episode:      323
+ep_length_mean:          119.0000	epsilon:                   0.3081	grad_norm:               608.8698	loss:                    5173.8939
+q_taken_mean:            -13.3997	return_mean:             -6832.6776	return_std:              1611.4108	target_mean:             -37.4851
+td_error_abs:             50.1419	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:52:25] my_main Recent Stats | t_env:      40460 | Episode:      340
+ep_length_mean:          119.0000	epsilon:                   0.2697	grad_norm:               583.2160	loss:                    4915.2139
+q_taken_mean:            -13.9650	return_mean:             -6245.8059	return_std:              1902.3320	target_mean:             -36.9290
+td_error_abs:             48.3076	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:52:34] my_main Recent Stats | t_env:      42483 | Episode:      357
+ep_length_mean:          119.0000	epsilon:                   0.2313	grad_norm:               568.1957	loss:                    4827.8519
+q_taken_mean:            -14.5261	return_mean:             -6049.0447	return_std:              1826.0709	target_mean:             -36.8272
+td_error_abs:             47.3974	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:52:41] my_main Recent Stats | t_env:      44506 | Episode:      374
+ep_length_mean:          119.0000	epsilon:                   0.1928	grad_norm:               561.8419	loss:                    4919.4784
+q_taken_mean:            -15.0827	return_mean:             -5189.9059	return_std:              1405.7331	target_mean:             -37.2052
+td_error_abs:             47.4877	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:52:51] my_main Recent Stats | t_env:      46529 | Episode:      391
+ep_length_mean:          119.0000	epsilon:                   0.1544	grad_norm:               567.0103	loss:                    5055.9814
+q_taken_mean:            -15.6333	return_mean:             -5348.8659	return_std:              1362.3258	target_mean:             -37.6768
+td_error_abs:             47.8209	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:52:57] my_main Updated target network
+[INFO 21:53:00] my_main Recent Stats | t_env:      48552 | Episode:      408
+ep_length_mean:          119.0000	epsilon:                   0.1159	grad_norm:               593.4815	loss:                    5315.3982
+q_taken_mean:            -16.1870	return_mean:             -5174.0400	return_std:              1266.4119	target_mean:             -39.0434
+td_error_abs:             49.1188	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:53:06] my_main Recent Stats | t_env:      50575 | Episode:      425
+ep_length_mean:          119.0000	epsilon:                   0.0775	grad_norm:               619.4188	loss:                    5505.0708
+q_taken_mean:            -16.7433	return_mean:             -5373.6047	return_std:              1266.3641	target_mean:             -40.5457
+td_error_abs:             50.6016	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:53:13] my_main Recent Stats | t_env:      52598 | Episode:      442
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               632.5461	loss:                    5660.4915
+q_taken_mean:            -17.2984	return_mean:             -6112.6788	return_std:              1738.3951	target_mean:             -41.6619
+td_error_abs:             51.3207	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:53:23] my_main Recent Stats | t_env:      54621 | Episode:      459
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               651.3587	loss:                    5884.2120
+q_taken_mean:            -17.8477	return_mean:             -7687.3024	return_std:              1725.0262	target_mean:             -43.0692
+td_error_abs:             52.4602	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:53:33] my_main Recent Stats | t_env:      56644 | Episode:      476
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               671.7670	loss:                    6018.1260
+q_taken_mean:            -18.3940	return_mean:             -8385.3482	return_std:              1509.6459	target_mean:             -44.3022
+td_error_abs:             53.2528	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:53:44] my_main Recent Stats | t_env:      58667 | Episode:      493
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               675.6266	loss:                    6143.9683
+q_taken_mean:            -18.9300	return_mean:             -9050.4306	return_std:              1339.4252	target_mean:             -44.7189
+td_error_abs:             53.3276	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:53:51] my_main Recent Stats | t_env:      60690 | Episode:      510
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               657.5646	loss:                    6162.3535
+q_taken_mean:            -19.4533	return_mean:             -8765.3271	return_std:              1214.7141	target_mean:             -44.6364
+td_error_abs:             52.5101	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:53:59] my_main Recent Stats | t_env:      62713 | Episode:      527
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               715.1183	loss:                    6742.1195
+q_taken_mean:            -19.9850	return_mean:             -8025.2741	return_std:              897.1986	target_mean:             -45.8376
+td_error_abs:             54.3975	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:54:10] my_main Recent Stats | t_env:      64736 | Episode:      544
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               679.1276	loss:                    6348.1203
+q_taken_mean:            -20.5016	return_mean:             -6650.8012	return_std:              1258.9700	target_mean:             -44.9813
+td_error_abs:             52.1873	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:54:19] my_main Recent Stats | t_env:      66759 | Episode:      561
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               640.1266	loss:                    6074.9416
+q_taken_mean:            -21.0169	return_mean:             -4948.4753	return_std:              1104.1074	target_mean:             -44.3353
+td_error_abs:             50.3691	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:54:27] my_main Recent Stats | t_env:      68782 | Episode:      578
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               602.4661	loss:                    5778.4208
+q_taken_mean:            -21.5347	return_mean:             -4419.7294	return_std:              1523.7280	target_mean:             -43.7447
+td_error_abs:             48.6946	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:54:32] my_main Recent Stats | t_env:      70805 | Episode:      595
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               601.4364	loss:                    5864.9245
+q_taken_mean:            -22.0590	return_mean:             -4334.0459	return_std:              1586.1884	target_mean:             -44.0599
+td_error_abs:             48.8376	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:54:34] my_main Updated target network
+[INFO 21:54:39] my_main Recent Stats | t_env:      72828 | Episode:      612
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               555.6813	loss:                    5539.5913
+q_taken_mean:            -22.5694	return_mean:             -4144.3624	return_std:              1413.0069	target_mean:             -44.1114
+td_error_abs:             47.4039	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:54:50] my_main Recent Stats | t_env:      74851 | Episode:      629
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               574.6487	loss:                    5639.9025
+q_taken_mean:            -23.0950	return_mean:             -4303.6482	return_std:              1776.0723	target_mean:             -45.2705
+td_error_abs:             48.1812	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:55:00] my_main Recent Stats | t_env:      76874 | Episode:      646
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               590.3100	loss:                    5721.1705
+q_taken_mean:            -23.6216	return_mean:             -5632.8541	return_std:              2459.9876	target_mean:             -46.4043
+td_error_abs:             48.8883	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:55:06] my_main Recent Stats | t_env:      78897 | Episode:      663
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               611.0905	loss:                    5857.4136
+q_taken_mean:            -24.1530	return_mean:             -5221.6812	return_std:              1927.1936	target_mean:             -47.7336
+td_error_abs:             49.8661	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:55:15] my_main Recent Stats | t_env:      80920 | Episode:      680
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               633.6410	loss:                    5967.6635
+q_taken_mean:            -24.6887	return_mean:             -5403.1024	return_std:              2022.7488	target_mean:             -48.9571
+td_error_abs:             50.6160	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:55:22] my_main Recent Stats | t_env:      82943 | Episode:      697
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               614.7552	loss:                    5606.0775
+q_taken_mean:            -25.2211	return_mean:             -6079.6835	return_std:              2295.9901	target_mean:             -48.8281
+td_error_abs:             49.5618	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:55:31] my_main Recent Stats | t_env:      84966 | Episode:      714
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               627.7669	loss:                    5861.0331
+q_taken_mean:            -25.7541	return_mean:             -6089.8918	return_std:              1736.5579	target_mean:             -49.6872
+td_error_abs:             50.5695	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:55:39] my_main Recent Stats | t_env:      86989 | Episode:      731
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               616.7933	loss:                    5698.8514
+q_taken_mean:            -26.2907	return_mean:             -5695.2635	return_std:              1158.1593	target_mean:             -49.6090
+td_error_abs:             49.6789	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:55:45] my_main Recent Stats | t_env:      89012 | Episode:      748
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               606.6783	loss:                    5654.4118
+q_taken_mean:            -26.8179	return_mean:             -6681.5329	return_std:              1155.1299	target_mean:             -49.5130
+td_error_abs:             48.9614	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:55:55] my_main Recent Stats | t_env:      91035 | Episode:      765
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               583.8926	loss:                    5448.5937
+q_taken_mean:            -27.3385	return_mean:             -6721.6082	return_std:              1181.4676	target_mean:             -49.2268
+td_error_abs:             47.8361	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:56:03] my_main Recent Stats | t_env:      93058 | Episode:      782
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               560.9997	loss:                    5301.9133
+q_taken_mean:            -27.8549	return_mean:             -6046.8600	return_std:              905.2338	target_mean:             -48.8749
+td_error_abs:             46.6259	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:56:09] my_main Recent Stats | t_env:      95081 | Episode:      799
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               539.3771	loss:                    5172.9541
+q_taken_mean:            -28.3737	return_mean:             -5523.6424	return_std:              721.7561	target_mean:             -48.6954
+td_error_abs:             45.8884	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+
+[INFO 21:56:10] my_main Updated target network
+[INFO 21:56:19] my_main Recent Stats | t_env:      97104 | Episode:      816
+ep_length_mean:          119.0000	epsilon:                   0.0500	grad_norm:               572.6612	loss:                    5613.9814
+q_taken_mean:            -28.8839	return_mean:             -4570.1565	return_std:              608.6670	target_mean:             -50.3230
+td_error_abs:             47.7577	test_ep_length_mean:     119.0000	test_return_mean:        -9334.9000	test_return_std:           0.0000
+

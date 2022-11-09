@@ -1,0 +1,10 @@
+env: driver
+
+env_args:
+  seed: 123
+
+
+gamma: 0.99
+t_max: 1000000
+test_nepisode: 16 # Number of episodes to test for
+test_interval: 100000

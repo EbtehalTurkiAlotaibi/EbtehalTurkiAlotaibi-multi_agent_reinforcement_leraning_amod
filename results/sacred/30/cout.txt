@@ -1,0 +1,111 @@
+[INFO 13:25:31] pymarl Running command 'my_main'
+[INFO 13:25:31] pymarl Started run with ID "30"
+[DEBUG 13:25:31] pymarl Starting Heartbeat
+[DEBUG 13:25:31] my_main Started
+Will run  <sacred.run.Run object at 0x7f9844eceac0> {'runner': 'episode', 'mac': 'basic_mac', 'env': 'driver', 'env_args': {'seed': 230809887}, 'batch_size_run': 1, 'test_nepisode': 16, 'test_interval': 100000, 'test_greedy': True, 'log_interval': 2000, 'runner_log_interval': 2000, 'learner_log_interval': 2000, 't_max': 1000000, 'use_cuda': True, 'buffer_cpu_only': True, 'use_tensorboard': False, 'save_model': False, 'save_model_interval': 2000, 'checkpoint_path': '', 'evaluate': False, 'load_step': 0, 'save_replay': False, 'local_results_path': 'results', 'gamma': 0.99, 'batch_size': 32, 'buffer_size': 5000, 'lr': 0.0005, 'critic_lr': 0.0005, 'optim_alpha': 0.99, 'optim_eps': 1e-05, 'grad_norm_clip': 10, 'agent': 'rnn', 'rnn_hidden_dim': 64, 'obs_agent_id': True, 'obs_last_action': True, 'repeat_id': 1, 'label': 'default_label', 'action_selector': 'epsilon_greedy', 'epsilon_start': 0.5, 'epsilon_finish': 0.01, 'epsilon_anneal_time': 50000, 'target_update_interval': 200, 'agent_output_type': 'q', 'learner': 'q_learner', 'double_q': True, 'mixer': 'qmix', 'mixing_embed_dim': 32, 'hypernet_layers': 2, 'hypernet_embed': 64, 'name': 'qmix', 'seed': 230809887} <Logger my_main (DEBUG)>
+[WARNING 13:25:31] my_main CUDA flag use_cuda was switched OFF automatically because no CUDA devices are available!
+[INFO 13:25:31] my_main Experiment Parameters:
+[INFO 13:25:31] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'driver',
+    'env_args': {   'seed': 230809887},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.01,
+    'epsilon_start': 0.5,
+    'evaluate': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'qmix',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': False,
+    'save_model_interval': 2000,
+    'save_replay': False,
+    'seed': 230809887,
+    't_max': 1000000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 100000,
+    'test_nepisode': 16,
+    'use_cuda': False,
+    'use_tensorboard': False}
+
+Simulation Start
+[INFO 13:25:31] my_main Beginning training for 1000000 timesteps
+/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/MA_Taxi/src/components/episode_buffer.py:103: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /Users/distiller/project/conda/conda-bld/pytorch_1646756029501/work/torch/csrc/utils/tensor_new.cpp:210.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/MA_Taxi/src/components/episode_buffer.py:103: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 13:25:32] my_main t_env: 119 / 1000000
+[INFO 13:25:32] my_main Estimated time left: 6 seconds. Time passed: 0 seconds
+[INFO 13:25:37] my_main Recent Stats | t_env:       2023 | Episode:       17
+ep_length_mean:          119.0000	epsilon:                   0.5000	return_mean:             473342.6000	return_std:                0.0000
+test_ep_length_mean:     119.0000	test_return_mean:        72299.0000	test_return_std:           0.0000	
+[INFO 13:25:40] my_main Recent Stats | t_env:       4046 | Episode:       34
+ep_length_mean:          119.0000	epsilon:                   0.4802	grad_norm:               151591056.0000	loss:                    153541792.0000
+q_taken_mean:            2221.4730	return_mean:             345134.1471	return_std:              60072.1657	target_mean:             3622.9695
+td_error_abs:            5049.9890	test_ep_length_mean:     119.0000	test_return_mean:        72299.0000	test_return_std:           0.0000
+
+[INFO 13:25:48] my_main Recent Stats | t_env:       6069 | Episode:       51
+ep_length_mean:          119.0000	epsilon:                   0.4603	grad_norm:               101701824.0000	loss:                    161646184.0000
+q_taken_mean:            2024.1904	return_mean:             107731.0275	return_std:              469769.3812	target_mean:             3073.9392
+td_error_abs:            4994.5355	test_ep_length_mean:     119.0000	test_return_mean:        72299.0000	test_return_std:           0.0000
+
+[INFO 13:25:55] my_main Recent Stats | t_env:       8092 | Episode:       68
+ep_length_mean:          119.0000	epsilon:                   0.4405	grad_norm:               77876984.0000	loss:                    223905530.6667
+q_taken_mean:            2265.8729	return_mean:             112670.2265	return_std:              380007.2672	target_mean:             2887.4682
+td_error_abs:            5874.1724	test_ep_length_mean:     119.0000	test_return_mean:        72299.0000	test_return_std:           0.0000
+
+[INFO 13:26:01] my_main Recent Stats | t_env:      10115 | Episode:       85
+ep_length_mean:          119.0000	epsilon:                   0.4207	grad_norm:               74786872.0000	loss:                    224417932.0000
+q_taken_mean:            2127.2129	return_mean:             136930.9365	return_std:              318508.7766	target_mean:             2780.1027
+td_error_abs:            5849.2499	test_ep_length_mean:     119.0000	test_return_mean:        72299.0000	test_return_std:           0.0000
+
+[INFO 13:26:08] my_main Recent Stats | t_env:      12138 | Episode:      102
+ep_length_mean:          119.0000	epsilon:                   0.4009	grad_norm:               62945068.0000	loss:                    228857414.4000
+q_taken_mean:            1991.7663	return_mean:             87246.2094	return_std:              334878.7621	target_mean:             2533.1907
+td_error_abs:            5844.4819	test_ep_length_mean:     119.0000	test_return_mean:        72299.0000	test_return_std:           0.0000
+
+[INFO 13:26:15] my_main Recent Stats | t_env:      14161 | Episode:      119
+ep_length_mean:          119.0000	epsilon:                   0.3810	grad_norm:               44287332.0000	loss:                    221513646.4000
+q_taken_mean:            2056.6893	return_mean:             79977.2824	return_std:              336846.5554	target_mean:             2425.6487
+td_error_abs:            5732.3228	test_ep_length_mean:     119.0000	test_return_mean:        72299.0000	test_return_std:           0.0000
+
+[INFO 13:26:21] my_main Recent Stats | t_env:      16184 | Episode:      136
+ep_length_mean:          119.0000	epsilon:                   0.3612	grad_norm:               39338948.0000	loss:                    234653592.0000
+q_taken_mean:            2064.4812	return_mean:             189154.9729	return_std:              97434.6387	target_mean:             2282.5035
+td_error_abs:            5845.5766	test_ep_length_mean:     119.0000	test_return_mean:        72299.0000	test_return_std:           0.0000
+
+[INFO 13:26:27] my_main Recent Stats | t_env:      18207 | Episode:      153
+ep_length_mean:          119.0000	epsilon:                   0.3414	grad_norm:               52170068.0000	loss:                    229383979.2000
+q_taken_mean:            2040.9260	return_mean:             190488.5882	return_std:              100477.3460	target_mean:             2147.9632
+td_error_abs:            5746.1331	test_ep_length_mean:     119.0000	test_return_mean:        72299.0000	test_return_std:           0.0000
+

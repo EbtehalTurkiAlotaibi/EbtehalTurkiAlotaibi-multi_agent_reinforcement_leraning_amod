@@ -1,0 +1,105 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/MA_Taxi/src",
+    "dependencies": [
+      "munch==2.5.0",
+      "numpy==1.22.4",
+      "PyYAML==6.0",
+      "sacred==0.8.2",
+      "torch==1.11.0"
+    ],
+    "mainfile": "main.py",
+    "name": "pymarl",
+    "repositories": [
+      {
+        "commit": "e28a54e908c3c54563a592601c2a99c71654978b",
+        "dirty": true,
+        "url": "git@github.com:umersheikh846/driver_marl.git"
+      },
+      {
+        "commit": "e28a54e908c3c54563a592601c2a99c71654978b",
+        "dirty": true,
+        "url": "git@github.com:umersheikh846/driver_marl.git"
+      },
+      {
+        "commit": "e28a54e908c3c54563a592601c2a99c71654978b",
+        "dirty": true,
+        "url": "git@github.com:umersheikh846/driver_marl.git"
+      }
+    ],
+    "sources": [
+      [
+        "main.py",
+        "_sources/main_73b5d0c0280b205fad6e6e58cbe5aad7.py"
+      ],
+      [
+        "run.py",
+        "_sources/run_7911ddab0b7ff30dd1480a75183ffc39.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_aa14e56e60b01dd7a9ddb8e6cdf36b85.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/Users/ebtehal/opt/anaconda3/lib/python3.9/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/MA_Taxi/src/main.py\", line 36, in my_main\n    run(_run, config, _log)\n",
+    "  File \"/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/MA_Taxi/src/run.py\", line 48, in run\n    run_sequential(args=args, logger=logger)\n",
+    "  File \"/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/MA_Taxi/src/run.py\", line 179, in run_sequential\n    learner.train(episode_sample, runner.t_env, episode)\n",
+    "  File \"/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/MA_Taxi/src/learners/q_learner.py\", line 118, in train\n    self.save_models(\"q_learned_model\")\n",
+    "  File \"/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/MA_Taxi/src/learners/q_learner.py\", line 133, in save_models\n    def save_models(self, path):\n",
+    "  File \"/Users/ebtehal/Library/CloudStorage/OneDrive-UniversityofEdinburgh/PhD_year2/Advanced RL/Taxi Problem/MA_Taxi/src/controllers/basic_controller.py\", line 69, in save_models\n    th.save(self.agent.state_dict(), \"{}/agent.th\".format(path))\n",
+    "  File \"/Users/ebtehal/opt/anaconda3/lib/python3.9/site-packages/torch/serialization.py\", line 377, in save\n    with _open_file_like(f, 'wb') as opened_file:\n",
+    "  File \"/Users/ebtehal/opt/anaconda3/lib/python3.9/site-packages/torch/serialization.py\", line 231, in _open_file_like\n    return _open_file(name_or_buffer, mode)\n",
+    "  File \"/Users/ebtehal/opt/anaconda3/lib/python3.9/site-packages/torch/serialization.py\", line 212, in __init__\n    super(_open_file, self).__init__(open(name, mode))\n",
+    "FileNotFoundError: [Errno 2] No such file or directory: 'q_learned_model/agent.th'\n"
+  ],
+  "heartbeat": "2022-11-08T13:27:29.687650",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Core(TM) i5-7Y54 CPU @ 1.20GHz",
+    "hostname": "Ebtehals-MacBook.local",
+    "os": [
+      "Darwin",
+      "macOS-10.16-x86_64-i386-64bit"
+    ],
+    "python_version": "3.9.7"
+  },
+  "meta": {
+    "command": "my_main",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2022-11-08T13:27:21.508583",
+  "status": "FAILED",
+  "stop_time": "2022-11-08T13:27:29.694121"
+}
